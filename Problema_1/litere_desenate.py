@@ -8,6 +8,16 @@ alphabeth = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 
 
 
+
+def sterge2():
+    t.home()
+    t.clear()
+def sterge():
+    t.home()
+    t.clear()
+    t.up()
+    t.backward(300)
+    t.down()
 def space():
     t.up()
     t.forward(15)
