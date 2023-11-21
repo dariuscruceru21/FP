@@ -438,7 +438,7 @@ def T():
     t.down()
 
 
-def u(t):
+def u():
     t.left(90)
     t.forward(15)
     t.back(30)
