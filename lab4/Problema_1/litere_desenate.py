@@ -1,5 +1,6 @@
 import turtle
 
+
 t = turtle.Pen()
 alphabeth = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
         'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'u',
@@ -612,9 +613,6 @@ def Ausrufezeichen():
     t.down()
 
 
-
-
-
 al = {'a': a,
       'b': b,
       'c': c,
@@ -644,5 +642,6 @@ al = {'a': a,
       '.': Dot,
       '?': Frage,
       '!': Ausrufezeichen,
-      ' ': space
+      ' ': space,
+
       }
