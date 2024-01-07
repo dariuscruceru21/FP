@@ -1,11 +1,21 @@
-from modelle.order import Order
+from modele.order import Order
+from modele.drink import Drink
+from modele.cooked_dish import Cooked_Dish
 
-dish1 = {'pui':13, 'porc':18}
-drink1 = {'cola':7, 'sprite':8}
+def main():
+    dishes1 = {'dish1': 12, 'dish2': 30}
+    drinks1 = {'drink1': 6, 'drink2': 5}
+    dishes2 = {'dish1': 56, 'dish2': 90}
+    drinks2 = {'drink1': 45, 'drink2': 15}
 
-order = Order('order1', 'daius', dish1, drink1)
+    order1 = Order('order1', 'bob', dishes1, drinks1)
+    order2 = Order('order2', 'dob', dishes2, drinks2)
 
-order.calculate_prices()
-print(order.total_price)
+    order1.calculate_prices()
+    print(order1.total_price)
 
-print(order.print_receipt())
+    print(order1.print_receipt())
+
+
+
+main()
