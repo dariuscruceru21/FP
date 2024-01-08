@@ -92,7 +92,7 @@ def deleteItem():
         2 - Drink
     """))
 
-    id = int(input("Enter the id you want to update"))#id for deleted item
+    id = int(input("Enter the id you want to delete"))#id for deleted item
 
     if choose == 1:
         cookedDishManager.remove(id)

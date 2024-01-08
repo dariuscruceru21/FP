@@ -40,6 +40,7 @@ def addCLientsOrder():
 
 def newOrder():
     value = int(input("Enter the id of the client that orders: "))
+    ShowData(2)
     clients = clientManager.load()
     client = clients[value]
 
@@ -47,6 +48,7 @@ def newOrder():
     drinksIds = []
     cookeddishes = cookedDishManager.load() if cookedDishManager.load() else []
     drinks = drinkManager.load() if drinkManager.load() else []
+
     showMenu()
 
     while True:
@@ -74,11 +76,12 @@ def newOrder():
                 print("Not found")
 
     order = Order(1, client.id, cookeddishesIds, drinksIds)
-    orders = orderManager.load() if orderManager.load() else []#list of objects type order
+    orders = orderManager.load() if orderManager.load() else [] #list of objects type order
     orders.append(order)
     orderManager.sort(orders)
 
     order.printReceipt()
+
 
 
 def showOrders():

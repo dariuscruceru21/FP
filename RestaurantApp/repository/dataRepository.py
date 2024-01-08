@@ -27,7 +27,7 @@ class DataRepo:
         print("Added new item")
 
     def remove(self, id):#removing an item by id
-        objectList: list = self.load()
+        objectList = self.load()
         if id < len(objectList):# if id is found
             objectList.pop(id)
             self.save(objectList)

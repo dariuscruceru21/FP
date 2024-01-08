@@ -100,7 +100,7 @@ def orderConsole():
         options = {
             1: showOrders,
             2: selectClientConsole,
-            0: Console()
+            0: Console
         }
 
         options[value]()
@@ -109,7 +109,7 @@ def selectClientConsole():
     value = int(input("""  
         1 - Search Client by name
         2 - Search CLient by address
-        3 - Add a new Client
+        3 - Add a new Client and Order
         0 - Back
     """))
 
@@ -120,6 +120,7 @@ def selectClientConsole():
         3: addCLientsOrder,
         0: orderConsole
     }
+
     options[value]()
 
     newOrder()

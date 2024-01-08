@@ -7,7 +7,7 @@ class Client(ID):
         self.address = address
 
     def __lt__(self, other):
-        return self.id < other.name
+        return self.name < other.name
 
 
     def __str__(self):
